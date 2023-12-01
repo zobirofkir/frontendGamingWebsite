@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csw-games</title>
+    <!-- Include Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+</head>
+<body class="bg-blue-600">
+
+      <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="games-details.html">Games Details</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>   
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="main-banner">
+        <div class="container">
+            <div class="flex flex-col-reverse lg:flex-row">
+                <div class="lg:w-2/3">
+                    <div class="text-center" style="margin-top: 20px;">
+                        <h3 class="text-2xl lg:text-4xl" style="color: white; font-weight: 900; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Upload Your Games</h3>
+                    </div>
+                    <form action="" enctype="multipart/form-data" id="games-form" method="POST" class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md mt-8">
+                        <label for="title" class="block text-sm font-medium text-gray-600">Title:</label>
+                        <input type="text" id="title" name="title" required class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300" aria-labelledby="title">
+                    
+                        <label for="image" class="block mt-4 text-sm font-medium text-gray-600">Image URL:</label>
+                        <input type="file" id="image" name="image" required class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300" aria-labelledby="image">
+                    
+                        <label for="description" class="block mt-4 text-sm font-medium text-gray-600">Description:</label>
+                        <textarea id="description" name="description" rows="4" required class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300" aria-labelledby="description"></textarea>
+                    
+                        <label for="game_path" class="block mt-4 text-sm font-medium text-gray-600">Game Path:</label>
+                        <input type="text" id="game_path" name="game_path" required class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300" aria-labelledby="game_path">
+                    
+                        <input type="submit" name="submit" value="Submit" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded-md cursor-pointer hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+                    </form>
+                    <div id="response-data"></div>
+                </div>
+                <div class="lg:w-1/3 lg:pl-8 mt-8 lg:mt-0">
+                    <div class="right-image">
+                        <img src="assets/images/banner-image.jpg" alt="" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container mx-auto p-4">
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="col-lg-12">
+            <p>Copyright © 2023  csw-games Website. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://zobirofkir.com" target="_blank">Zobir Ofkir</a></p>
+          </div>
+        </div>
+      </footer>
+    
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/js/isotope.min.js"></script>
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/counter.js"></script>
+      <script src="assets/js/custom.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/apiGames.js"></script>
+</body>
+</html>
