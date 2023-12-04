@@ -9,7 +9,7 @@ $(function () {
 
         $.ajax({
             method: "POST",
-            url: "http://127.0.0.1:8000/api/game",
+            url: "https://zobirofkir.com/api/api/game",
             data: formData,
             dataType: "json",
             contentType: false,
@@ -25,6 +25,7 @@ $(function () {
                         </div>
                     `);
                     form[0].reset();
+                    window.location.href = 'index.html';
                 }
             },
             error: function (xhr, status, error) {

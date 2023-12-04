@@ -1,5 +1,5 @@
 $(function () {
-    const response = $("#result-container");
+    const response = $("#response-gmes_all");
 
     let imageUrls = []; // Array to store image URLs
 
@@ -22,22 +22,20 @@ $(function () {
 
                     // Assuming 'items' is an array containing your data
                     response.append(`
-                        <div class="col-lg-3 col-md-6">
-                            <div class="item">
-                                <div class="thumb"> 
-                                    <img src="${item.image_url}" alt="No Image Found">
-                                </div>
-                                <div class="down-content">
-                                    <span class="category">${item.title}</span>
-                                    <h4>${item.description.substring(0, 100)+' ...'}</h4>
-                                    <a href="${item.game_path}"><i class="fa-solid fa-download fa-shake"></i></a>
-                                </div>
-                                <a href="games.html" class="btn btn-info show-details" data-game-id="${item.id}">
-                                    <i class="fa-solid fa-circle-info"></i> More Games
-                                </a>              
-                            </div>
-                        </div>
-                    `);
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="item">
+                      <div class="thumb">
+                        <a href="games-details.html"><img src="${item.image_url}" alt=""></a>
+                      </div>
+                      <div class="down-content">
+                          <span class="category">${item.title}</span>
+                          <h4>${item.title}</h4>
+                          <span class="category">${item.description.substring(0, 100)+' ...'}</span>
+                          <a href="${item.game_path}">Download</a>
+                      </div>
+                    </div>
+                  </div>
+                  `);
                 });
 
                 // Now imageUrls array contains all the image URLs
